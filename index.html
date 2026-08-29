@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>English Learning Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card" aria-labelledby="dashboard-title">
+        <div class="hero-content">
+          <p class="eyebrow">Personal English Learning System</p>
+          <h1 id="dashboard-title">Dashboard</h1>
+          <p class="hero-copy">
+            Build a steady daily English routine with focused lessons, speaking drills,
+            vocabulary growth, and quick reviews.
+          </p>
+          <div class="hero-actions" aria-label="Learning actions">
+            <a class="primary-button" href="#today-lesson">Start Today's Lesson</a>
+            <a class="secondary-button" href="#progress">View Progress</a>
+          </div>
+        </div>
+        <div class="progress-panel" id="progress" aria-label="Current learning progress">
+          <div class="progress-header">
+            <span>Current Progress</span>
+            <strong>42%</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div class="progress-fill"></div>
+          </div>
+          <ul class="progress-stats" aria-label="Progress details">
+            <li><strong>7</strong><span>Day streak</span></li>
+            <li><strong>18</strong><span>Lessons done</span></li>
+            <li><strong>124</strong><span>Words saved</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-heading" aria-label="Learning modules introduction">
+        <p class="eyebrow">Today&apos;s focus</p>
+        <h2>Choose a practice area</h2>
+      </section>
+
+      <section class="dashboard-grid" aria-label="Learning modules">
+        <article class="learning-card featured" id="today-lesson">
+          <div class="card-icon" aria-hidden="true">📘</div>
+          <div>
+            <p class="card-label">20 minutes</p>
+            <h3>Today&apos;s Lesson</h3>
+            <p>
+              Practice useful phrases for everyday conversations and review one short
+              grammar point.
+            </p>
+          </div>
+          <button type="button">Open Lesson</button>
+        </article>
+
+        <article class="learning-card">
+          <div class="card-icon" aria-hidden="true">🎙️</div>
+          <div>
+            <p class="card-label">10 minutes</p>
+            <h3>Speaking Practice</h3>
+            <p>
+              Read prompts aloud, record yourself, and build confidence speaking in
+              complete sentences.
+            </p>
+          </div>
+          <button type="button">Practice Now</button>
+        </article>
+
+        <article class="learning-card">
+          <div class="card-icon" aria-hidden="true">🧠</div>
+          <div>
+            <p class="card-label">12 new words</p>
+            <h3>Vocabulary</h3>
+            <p>
+              Learn high-frequency words, simple definitions, and example sentences
+              you can reuse.
+            </p>
+          </div>
+          <button type="button">Study Words</button>
+        </article>
+
+        <article class="learning-card">
+          <div class="card-icon" aria-hidden="true">✅</div>
+          <div>
+            <p class="card-label">5 minutes</p>
+            <h3>Review</h3>
+            <p>
+              Quickly revisit recent lessons and mark what feels easy, okay, or needs
+              more practice.
+            </p>
+          </div>
+          <button type="button">Start Review</button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
